@@ -1,0 +1,107 @@
+
+/*POLICE*/
+body{
+  font-family: 'Allerta', Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+.navbar.navbar-default.hid{
+  margin: 0px;
+  border-radius: 0px;
+  padding-top: 5px;
+  height: 60px;
+  font-size: 20px;
+}
+
+nav.navbar.navbar-default.hid {
+    background: white;
+} 
+.fort{
+  padding-top: 60px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.logo_text{
+  font-family: monospace;
+  color: white;
+  font-weight: bold;
+}
+
+hr{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 55px;
+}
+/*POLICE*/
+.vertc{
+  background-color: #8CC63F;
+}
+
+.vertf{
+  background-color: #39B54A;
+}
+
+.maronc{
+  background-color: #CE9A34;
+}
+
+.maronf{
+  background-color: #B27E22;
+}
+
+.deg{
+  background: url(../deg.png);
+  background-size: cover;
+}
+
+/*BOUTONS*/
+.btnjbl,.btnjbr, .btnjbu{
+  padding: 10px;
+  font-size: 17px;
+  width: 240px;
+}
+.btnjbl{
+  border-radius: 30px 0px 0px 30px;
+}
+
+.btnjbr{
+  border-radius: 0px 30px 30px 0px;
+}
+
+.btnjbu{
+  border-radius: 20px 20px 20px 20px;
+}
+
+.btnjcv{
+  border-color: #CE9A34;
+  background-color: inherit;
+}
+
+.btnjcm{
+  border-color: #8CC63F;
+  background-color: inherit;
+}
+
+.row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.menubtn{
+  color: #777;
+}
+
+.mail {
+    display: flex;
+    width: 300px;
+    margin: auto;
+}
+
+.newsletter {
+    border-style: solid;
+    height: 35px;
+    border-radius: 20px 0px 0px 20px;
+    border-color: white;
+    text-align: center;
+    color: black;
+}

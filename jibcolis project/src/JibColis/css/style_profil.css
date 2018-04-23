@@ -1,0 +1,159 @@
+body{
+  background: url("../vect.png")
+}
+
+.corp{
+  background: white;
+}
+
+.f{
+  background-color: #3b5998;
+  color: white;
+  font-size: 15px;
+}
+.g{
+  background-color: #D50F25;
+  color: white;
+  font-size: 15px;
+}
+
+div#menu {
+    margin-top: 30px;
+}
+
+img.profil_photo {
+    margin-top: -30px;
+    border-radius: 5px;
+    height:100px;
+    width:100px;
+}
+
+@media screen and (max-width:732px){
+  img.profil_photo {
+      margin-top: auto;
+      border-radius: 5px;
+      height:100%;
+      width: 45px;
+  }
+}
+
+.navbar-brand{
+  padding: 5px;
+  display: flex;
+}
+
+.profil_brand{
+  margin-left: 5px;
+  text-align:center;
+}
+
+/*CORP*/
+.corp{
+  margin-top: 30px;
+  color: black;
+}
+
+.x1{
+  padding: 0px;
+  height: 100px;
+}
+
+.x2{
+  padding: 0px;
+  height: 200px;
+}
+
+.x3{
+  padding: 0px;
+  height: 300px;
+}
+
+.tab_bord{
+  background: white;
+  text-align: center;
+}
+
+.a,.b,.c,.d,.e{
+  color: white;
+}
+
+.a:hover,.b:hover,.c:hover,.d:hover,.e:hover{
+  color: black;
+}
+
+.a{
+  border-radius: 10px 0px 0px 10px;
+  padding-top: 100px;
+  background: #39B54A;
+  transition: all 0.6s;
+}
+
+.a:hover{
+  padding-top: 50px;
+  background: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #39B54A;
+}
+
+.b{
+  padding-top: 20px;
+  background: #8CC63F;
+  transition: all 0.6s;
+}
+
+.b:hover{
+  padding-top: 5px;
+  background: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #8CC63F;
+}
+
+.c{
+  background: #B27E22;
+  padding-top: 20px;
+  transition: all 0.6s;
+}
+
+.c:hover{
+  padding-top: 5px;
+  background: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #8CC63F;
+}
+
+.d{
+  border-radius: 0px 10px 0px 0px;
+  background: #CE9A34;
+  padding-top: 70px;
+  transition: all 0.6s;
+}
+
+.d:hover{
+  padding-top: 30px;
+  background: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #8CC63F;
+}
+
+.e{
+  border-radius: 0px 0px 10px 0px;
+  background: red;
+  padding-top: 30px;
+  transition: all 0.6s;
+}
+
+.e:hover{
+  padding-top: 10px;
+  background: white;
+  border-style: solid;
+  border-width: 3px;
+  border-color: red;
+}
+
+#msg_ic, #col_ic, #trajet_ic, #edit_ic, #dec_ic{
+  display: none;
+}

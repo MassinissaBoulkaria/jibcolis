@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script
+			  src="https://code.jquery.com/jquery-3.2.1.js"
+			  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+			  crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"
+    integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="
+    crossorigin="anonymous"></script>
+    <link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Allerta' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/style.css">
+    <style media="screen">
+      body{
+          background: url(../background.jpg) no-repeat fixed;
+          background-size: cover;
+      }
+    </style>
+    <title>JibColis - Comment ça marche ?</title>
+  </head>
+  <body>
+  <div id="menu">
+  <nav class="navbar navbar-default hid">
+    <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.php">
+            <img height="100%" src="../logo.png" alt="Logo_JIBCOLIS">
+          </a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-right collapse navbar-collapse" id="myNavbar">
+          <button class="btn btnjcm menubtn" href="#" id="how">Comment ça marche</button>
+          <button class="btn navbar-btn f"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+          <button class="btn navbar-btn g"><i class="fa fa-google" aria-hidden="true"></i></button>
+          <button class="btn btnjcv menubtn" data-toggle="modal" data-target="#cnx_modal">Se conecter</button>
+          <a href="signup.html" class="btn btnjcm menubtn" >S'incrire</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- Modal CONNEXION -->
+  <div id="cnx_modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="jumbotron jumjc">
+            <h3><i class="fa fa-sign-in" aria-hidden="true"></i> Se connecter</h3>
+            <p>
+              <a href="signup.html">Créer un compte</a> - <a href="#">Mot de passe oublié ?</a>
+            </p>
+          </div>
+          <div class="container">
+            <div class="col-md-8 col-sm-8 col-xs-8">
+              <form class="form-horizontal">
+
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                      <input id="email" type="mail" class="form-control" name="email" placeholder="Email">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                      <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <button type="button" class="btn btnjcv menubtn" style="width:100%;margin-top:5px;" id="btn_cnx">Connexion</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4" style="text-align:center;">
+              <h6>S'identifier avec</h6>
+              <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div style="color:white;padding-top:20px;">
+            notext
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+<div class="section1">
+  <div class="main main2">
+    <div>
+      <p class="fort">COMMENT CA MARCHE</p>
+      <p>
+        Vous voulez transporter un colis ou expédier un colis ?
+      </p>
+    </div>
+
+    <div class="row pad">
+      <div class="col-md-3"></div>
+      <div class="col-md-3">
+        <a href="#trans" id="anc_trans" class="btn btnjbl vertf" name="button">TRANSPORTEUR</a >
+        </div>
+      <div class="col-md-3">
+        <a href="#exped" id="anc_exped" class="btn btnjbr maronf" name="button">EXPEDITEUR</a >
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+</div>
+
+    <section class="intro">
+      <div class="container">
+        <h2 id="trans" >TRANSPORTEUR</h2>
+      </div>
+    </section>
+
+    <section class="timeline">
+      <ul>
+        <li>
+          <div>
+            <time>1</time> Indiquez la date, la destination et l'horaire de votre voyage, puis la quantité et poids du colis que vous consentez à transporter.
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>2</time> L’expéditeur (envoyeur) réserve en ligne via la plateforme « JibColis » et vous êtes automatiquement prévenu(e) par e-mail ou par téléphone à chaque nouvelle réservation.
+            Ensuite vous échangez avec votre expéditeur par téléphone pour régler les derniers détails relatifs à l’expédition de votre colis.
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>3</time>
+            Consultez le profil qui vous correspond le mieux et vérifiez les informations concernant l’expéditeur.
+Si vous voulez des précisions sur la nature de l’expédition, la plateforme «JibColis» vous offre l’opportunité de rentrer en contact avec lui par téléphone ou par e-mail.
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>4</time>Convenez d'un lieu et d'une heure de rendez-vous avec l'expéditeur, puis demandez à voir sa pièce d'identité et assurez-vous que les informations qui y figurent concordent avec celles apposées sur le contrat.
+Vérifiez le contenu du colis et contrôlez, en compagnie de l’expéditeur, les coordonnées exactes du destinataire du colis.
+Signez la déclaration de confiance (imprimable) sur le site et faites-le signer par l’expéditeur.
+Vous pouvez enfin prendre en charge l’envoi du colis</div>
+        </li>
+        <li>
+          <div>
+            <time>5</time> Lorsque vous arrivez au lieu de destination contractuellement convenu : vous remettez le colis de main à main – remise en propres et sans intermédiaire(s) - accompagné de la déclaration de confiance en mentionnant votre nom et prénom.
+Le destinataire doit également, à son tour, vérifier si le contenu du colis correspond à ce qui a effectivement et contractuellement été convenu entre l’expéditeur et le transporteur.
+Il peut ensuite signer la déclaration de confiance et indiquer qu’il a effectivement bien réceptionné le colis – et éventuellement y formuler des réserves.
+Vous recevrez votre indemnité de participation uniquement après remise en mains propres au destinataire du colis.  </div>
+        </li>
+        <li>
+          <div>
+            <time>6</time> L’indemnité de participation proposée par le transporteur-voyageur doit être moins chère que les tarifs d’usage en vigueur proposés par les services marchands proposant des expéditions par voie traditionnelle. Cette indemnité demeure cependant libre et doit être établie d’un commun accord entre les deux parties contractantes.</div>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <div id="exped" class="section2">
+    <div class="">
+      <section class="intro intro2">
+        <div class="container">
+          <h2 id="trans" >EXPEDITEUR</h2>
+        </div>
+      </section>
+
+      <section class="timeline timeline2">
+        <ul>
+          <li>
+            <div>
+              <time>1</time> Entrez le lieu de départ et de destination de votre colis, la date d’expédition, le type de votre colis (voir conditions) ainsi que son poids.
+Choisissez ensuite parmi les transporteurs-voyageurs proposant un trajet à proximité du lieu d’expédition de votre colis, ce qui maximisera la certitude d’une remise rapide de votre colis et d’une remise en mains propres.
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>2</time> Consultez le profil qui vous correspond et vérifiez les informations concernant le transporteur-voyageur.
+Si vous voulez des précisions sur votre transporteur-voyageur, la plateforme «JibColis» vous offre l’opportunité de rentrer en contact avec lui par téléphone et/ou par émail.
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>3</time>
+              ndiquez sur votre colis le nom, prénom, et le numéro de téléphone de votre récepteur: celui-ci sera mis en contact avec le transporteur-voyageur, une fois la destination est atteinte.</div>
+          </li>
+          <li>
+            <div>
+              <time>4</time>La démarche proposée par notre site pour assurer la bonne expédition de votre colis consiste en un suivi d’étapes simples mais néanmoins déterminantes.
+Convenez d'un lieu et d'une heure de rendez-vous avec l'expéditeur, puis demandez à voir sa pièce d'identité et assurez-vous que les informations qui y figurent concordent avec celles figurant sur la déclaration de confiance.
+Assurez vous de renseigner les bonnes informations concernant le destinataire et vérifiez avec l’expéditeur le contenu du colis.
+Signez la déclaration de confiance (imprimable) sur le site et faites-le signer par l’expéditeur, puis remettez votre colis.</div>
+          </li>
+          <li>
+            <div>
+              <time>5</time> L’indemnité de participation proposée par le transporteur-voyageur doit être moins chère que les tarifs d’usage en vigueur proposés par les services marchands proposant des expéditions par voie traditionnelle. Cette indemnité demeure cependant libre et doit être établie d’un commun accord entre les deux parties contractantes.</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+
+</body>
+<script type="text/javascript">
+(function() {
+
+'use strict';
+
+// define variables
+var items = document.querySelectorAll(".timeline li");
+
+// check if an element is in viewport
+// http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function callbackFunc() {
+  for (var i = 0; i < items.length; i++) {
+    if (isElementInViewport(items[i])) {
+      items[i].classList.add("in-view");
+    }
+  }
+}
+
+// listen for events
+window.addEventListener("load", callbackFunc);
+window.addEventListener("resize", callbackFunc);
+window.addEventListener("scroll", callbackFunc);
+
+})();
+</script>
+
+<footer class="maronc">
+  <div class="container-fluid">
+    <div class="col-md-3 col-sm-6 col-xs-6">
+      <ul>
+        <li><a href="#">PRÉSENTATION</a> </li>
+        <li><a href="#">QUI SOMMES NOUS</a></li>
+        <li><a href="#">NOS OBJECTIFS</a></li>
+        <li><a href="#">CGU</a></li>
+      </ul>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-6">
+      <ul>
+        <li><a href="#">PARTENAIRES</a></li>
+        <li><a href="#">ADDRA</a></li>
+        <li><a href="#">PRESSE</a></li>
+    </ul>
+  </div>
+  <div class="col-md-6 col-sm-12 col-xs-12">
+    <div class="rs">
+      <a href="#" class="fa fa2 fa-facebook"></a>
+      <a href="#" class="fa fa2 fa-twitter"></a>
+      <a href="#" class="fa fa2 fa-linkedin"></a>
+      <a href="#" class="fa fa2 fa-instagram"></a>
+      <a href="#" class="fa fa2 fa-youtube"></a>
+    </div><br>
+    <div class="mail">
+      <input type="text" name="mail" placeholder="NEWSLETTER"value=""><div class="inscription">S'INSCRIRE</div>
+    </div>
+  </div>
+  </div>
+<a type="button" id="scroll_top" class="" name="button"><i class="fa fa-arrow-circle-o-up fa-3x" aria-hidden="true"></i></a>
+</footer>
+<div class="rights">
+  Copyright (c) 2017 JibColis All Rights Reserved.
+</div>
+</div>
+</body>
+<script type="text/javascript">
+
+    $(function(){
+      setTimeout(function(){
+        $('#more').fadeIn('slow');
+      },1000);
+
+      $('#more').click(function(){
+        window.location.replace("comment_ca_marche.html");
+      });
+
+      $('#how').click(function() {
+        window.location.replace("comment_ca_marche.html");
+      });
+
+      $('#anc_trans').click(function () {
+        $('html,body').animate({scrollTop: $("#trans").offset().top},'slow');
+      });
+
+      $('#anc_exped').click(function () {
+        $('html,body').animate({scrollTop: $("#exped").offset().top},'slow');
+      });
+
+      $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('#scroll_top').fadeIn(500);
+        } else {
+            $('#scroll_top').fadeOut(500);
+        }
+      });
+
+      $('#scroll_top').click(function() {
+        $('html, body').animate({scrollTop : 0},800);
+      });
+    });
+</script>
+</html>

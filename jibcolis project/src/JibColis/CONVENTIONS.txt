@@ -1,0 +1,18 @@
+COULEURS :
+vert foncé #39B54A
+vert clair #8CC63F
+maron foncé #B27E22
+maron claire #CE9A34
+
+POLICE : 
+TITRE et LOGO : CALIBRI ; majuscule
+AUTRE : 
+
+<link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+
+{
+font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+

@@ -1,0 +1,64 @@
+/*Filtrer*/
+form.form-inline {
+    text-align: center;
+}
+
+.btnSearch{
+  border-radius: 0px 20px 20px 0px;
+  height: 40px;
+  padding-right: 20px;
+  color: white;
+}
+
+@media screen and (max-width: 732px){
+  .btnSearch{
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0px 0px 20px 20px;
+  }
+}
+
+/*Annonces*/
+.contain_filter_list, .resultats{
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.contain_filter_list{
+  text-align: center;
+}
+
+.annonce, .annonce>*{
+  height: 180px;
+}
+
+.annonce{
+  text-align: center;
+  margin-top: 15px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.annonce:hover{
+  box-shadow: 5px 5px 3px #39B54A;
+}
+
+@media screen and (max-width: 1006px){
+  .img_annonce> img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.img_annonce> img {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.detail_annonce, .voir_annonce
+{
+  text-align: center;
+}
